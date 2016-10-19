@@ -6,5 +6,5 @@ I tried to normalized Bijankhan corpus by some simple replacements.
 Simply run the 'bijankhan.py' to normalize the corpus. for help type 'python bijankhan.py -h'
 
 # License
-Using/modifing this script has no limitation due to its license (Apache License, Version 2.0).
+Using/modifing this script has no limitation due to its license (GNU v3.0).
 But if you like to use Bijankhan corpus you need to contact to the owner.
