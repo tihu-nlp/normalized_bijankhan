@@ -10,7 +10,7 @@ I tried to normalized Bijankhan corpus by some simple replacements.
 
 
 ## How to run
-Simply run the 'bijankhan.py' to normalize the corpus. for help type 'python bijankhan.py -h'
+Simply run the `bijankhan.py` to normalize the corpus. for help type 'python bijankhan.py -h'
 
 
 ## Supporting Tihu
@@ -21,4 +21,4 @@ If you like this project, please [donate](http://lilak-project.com/donate.php) o
 
 ## License
 Using/modifing this script has no limitation due to its license (GNU v3.0).
-But if you like to use Bijankhan corpus you need to contact to the owner.
+But if you like to use Bijankhan corpus you need to contact to the [owner](http://dbrg.ut.ac.ir/Bijankhan/).
