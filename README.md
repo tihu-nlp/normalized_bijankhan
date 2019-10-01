@@ -20,5 +20,5 @@ If you like this project, please [donate](http://lilak-project.com/donate.php) o
 
 
 ## License
-Using/modifing this script has no limitation due to its license (GNU v3.0).
-But if you like to use Bijankhan corpus you need to contact to the [owner](http://dbrg.ut.ac.ir/Bijankhan/).
+Using or modifying this project has no limitation due to its license (GNU v3.0).
+But if you like to use Bijankhan corpus, you need to contact to the [owner](http://dbrg.ut.ac.ir/Bijankhan/).
