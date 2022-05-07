@@ -64,7 +64,7 @@ class Bijankhan(object):
         return word
         
     def Process(self, path):
-        count = 100
+        count = len(os.listdir(path))
         index = 0
         
         fname = '{0}\\bijankhan.txt'.format(path)        
