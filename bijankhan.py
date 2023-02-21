@@ -84,15 +84,36 @@ class Bijankhan(object):
                             
                         
                 index = index + 1
-            
+        
+    def processedProcess(self, path):
+        with open('bijankhan.txt', 'w', encoding='utf-8') as o:
 
+            print("normalizing %s." % path)
+            with open(path, 'r') as f:
+
+                for line in tqdm(f.readlines()):
+                    word_tag = line.split('       ')
+                    word = self.Normalize(word_tag[0].strip())
+                    tag = word_tag[-1].strip()
+                    
+                    o.write('%s\t%s\n' %(word, tag))
+                            
+                        
+            
+from tqdm import tqdm
 parser = argparse.ArgumentParser()
-parser.add_argument("-p", "--path", help="Path to Bijankhan lbl files")
+parser.add_argument("-p", "--path", help="Path to Bijankhan lbl files (if input mode is original) or Path to Bijankhan full corpus single file (if input mode is processed)")
+parser.add_argument("-i", "--inputmode", default="original", help="original / processed")
 args = parser.parse_args()
 
 if args.path:
     b = Bijankhan()
-    b.Process(args.path)
+    if args.inputmode=='original':
+        b.Process(args.path)
+    elif args.inputmode=='processed':
+        b.processedProcess(args.path)
+    else:
+        raise Exception("Invalid input mode!")
 else:
     parser.print_help()
 
